@@ -1,5 +1,7 @@
 (lang dune 2.3)
 
+(name lib)
+
 ; dune-project ファイルで設定したメタデータを使って `.opam`ファイルを自動生成する
 
 (generate_opam_files true)
@@ -8,16 +10,11 @@
 
 (implicit_transitive_deps true)
 
-(license MIT)
-
-(authors max)
-
-(maintainers max)
-
 (package
- (name mylib)
+ (name lib)
+ (license MIT)
+ (authors max)
+ (maintainers max)
  (synopsis "hello")
  (description "world")
- (depends))
-
-; (homepage https://harumaxy.com)
+ (depends lwt lwt_ppx caqti caqti-lwt caqti-driver-postgresql))

@@ -7,6 +7,11 @@ authors: ["max"]
 license: "MIT"
 depends: [
   "dune" {>= "2.3"}
+  "lwt"
+  "lwt_ppx"
+  "caqti"
+  "caqti-lwt"
+  "caqti-driver-postgresql"
 ]
 build: [
   ["dune" "subst"] {pinned}

@@ -1,6 +1,6 @@
 {
   "ocaml.sandbox": {
     "kind": "opam",
-    "switch": "4.11.0"
+    "switch": "${workspaceFolder:ocaml_aws_custom_runtime_tutorial}"
   }
 }

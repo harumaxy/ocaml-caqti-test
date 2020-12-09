@@ -1,4 +1,6 @@
 (library
- (name mylib)
- (public_name mylib)
- (libraries re lwt))
+ (name lib)
+ (public_name lib)
+ (libraries lwt caqti caqti-lwt caqti-driver-postgresql)
+ (preprocess
+  (pps lwt_ppx ppx_rapper)))

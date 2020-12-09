@@ -1,5 +1,0 @@
-(executable
- (name hello_world)
- (libraries core lwt.unix)
- (preprocess
-  (pps ppx_jane)))

@@ -1,0 +1,9 @@
+; 複数実行ファイルがある場合は、executables を使って定義する (public_namesで指定)
+; public_name をつけると、 dune exec コマンドで `path/to/file.exe` と書かなくても public_name だけで指定できる
+
+(executables
+ (names main migrate rollback)
+ (public_names main migrate rollback)
+ (libraries lib cohttp-lwt-unix)
+ (preprocess
+  (pps lwt_ppx)))
